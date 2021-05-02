@@ -1,0 +1,8 @@
+<!--- je parcours tout le tableau cocktails et a chaque tours j'enrigistre un object avec ses propriété dans Cocktail -->
+<div *ngFor="let cocktail of cocktails">
+    <div>
+        <div>Nom : {{ cocktail.name }}</div>
+        <div>Prix : {{ cocktail.price }}</div>
+        <div><img [src]="cocktail.img" [alt]="cocktail.name" /></div>
+    </div>
+</div>
